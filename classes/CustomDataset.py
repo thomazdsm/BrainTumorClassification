@@ -1,8 +1,12 @@
 import os
-
 import torch
-from torch.utils.data import Dataset, DataLoader, random_split
+from torch.utils.data import Dataset
 from torchvision import transforms
+from PIL import Image
+from typing import List, Tuple
+
+# Definição do dispositivo
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class CustomDataset(Dataset):
     def __init__(self, root_dir: str, transform: transforms.Compose, split: str = 'training'):

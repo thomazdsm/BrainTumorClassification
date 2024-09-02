@@ -12,7 +12,7 @@ from classes.CrossValidator import CrossValidator
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def main():
-    ROOT_DIR = '/home/thomaz/Projects/EngComp/BrainTumorClassification/datasets/masoud_nickparvar'
+    ROOT_DIR = '/home/thomaz/Projects/EngComp/BrainTumor/datasets/masoud_nickparvar'
 
     train_transform = transforms.Compose([
         transforms.Resize((224, 224)),

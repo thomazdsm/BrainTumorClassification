@@ -1,10 +1,9 @@
 import torch
-from torch.utils.data import Dataset, DataLoader, random_split
+from torch.utils.data import  DataLoader
 import torch.nn as nn
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-from typing import List, Tuple, Dict
-
+from typing import List, Tuple
 
 class Trainer:
     def __init__(self, model: nn.Module, train_loader: DataLoader, val_loader: DataLoader,

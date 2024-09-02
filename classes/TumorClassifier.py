@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 
-
 class TumorClassifier(nn.Module):
     def __init__(self, num_classes: int):
         super(TumorClassifier, self).__init__()

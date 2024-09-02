@@ -1,14 +1,12 @@
-import os
 import random
-import numpy as np
 import torch
-from torch.utils.data import Dataset, DataLoader, random_split
+from torch.utils.data import Dataset, DataLoader
 import torch.nn as nn
-from torchvision import transforms
-from PIL import Image
-import matplotlib.pyplot as plt
-from tqdm import tqdm
-from typing import List, Tuple, Dict
+
+from classes.Trainer import Trainer
+
+# Definição do dispositivo
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class CrossValidator:
     def __init__(self, dataset: Dataset, model_cls: nn.Module, num_classes: int,
