@@ -44,5 +44,4 @@ python main.py
 ```
 
 ## Results
-The[TCC - Thomaz da Silva Machado - Modelo Final en.pdf](../../../../Downloads/TCC%20-%20Thomaz%20da%20Silva%20Machado%20-%20Modelo%20Final%20en.pdf)
-[TCC - Thomaz da Silva Machado - Modelo Final.pdf](../../../../Downloads/TCC%20-%20Thomaz%20da%20Silva%20Machado%20-%20Modelo%20Final.pdf) model showed promising results with high accuracy on the training data and reasonable generalization on validation data. Future improvements include applying data augmentation and early stopping to prevent overfitting.
+The model showed promising results with high accuracy on the training data and reasonable generalization on validation data. Future improvements include applying data augmentation and early stopping to prevent overfitting.
